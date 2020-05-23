@@ -22,10 +22,10 @@ const LastProjects = () => {
           title={title}
           align="center"
         />
-        <Grid container justify="space-around">
+        <Grid container spacing={2} justify="space-around">
           {
             projects.map((project) => (
-              <Box component={Grid} item mb={3}>
+              <Box component={Grid} item>
                 <ProjectCard {...project} />
               </Box>
             ))

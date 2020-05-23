@@ -18,7 +18,7 @@ const NextEvents = () => {
     message: messages.title,
   };
   const subtitle = {
-    variant: 'subtitle2',
+    variant: 'subtitle1',
     message: messages.subtitle,
   };
 

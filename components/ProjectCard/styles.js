@@ -21,6 +21,12 @@ export default function (theme) {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
 
+      transition: 'transform 200ms',
+
+      '&:hover': {
+        transform: 'scale(1.02)',
+      },
+
       '@media screen and (max-width: 320px)': {
         height: '272px',
         width: '272px',
