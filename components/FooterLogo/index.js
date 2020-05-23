@@ -1,10 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import Box from '@livipdev/core/Box';
-import LogoLivip from './logo-livip.svg';
+import Logotype from '@livipdev/core/Logotype';
 
-const FooterLogo = () => (
-  <Box component={LogoLivip} mb={3} />
+const FooterLogo = ({ variant }) => (
+  <Logotype variant={variant} />
 );
+
+FooterLogo.propTypes = {
+  variant: PropTypes.string,
+};
 
 export default FooterLogo;

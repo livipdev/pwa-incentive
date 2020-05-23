@@ -1,5 +1,7 @@
 import React from 'react';
+
 import EventFilteredList from '@livipdev/containers/EventFilteredList';
+import Box from '@livipdev/core/Box';
 import Container from '@livipdev/core/Container';
 import Title from '@livipdev/core/Title';
 import { SCREEN_SIZES } from '@livipdev/core/styles/theme/constants';
@@ -21,7 +23,7 @@ const NextEvents = () => {
   };
 
   return (
-    <Container>
+    <Box component={Container} py={7}>
       <Title
         title={title}
         subtitle={subtitle}
@@ -33,7 +35,7 @@ const NextEvents = () => {
         selectorName={NEXT_EVENTS}
       />
       <HomeNextEventsButtons />
-    </Container>
+    </Box>
   );
 };
 
