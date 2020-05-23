@@ -22,11 +22,11 @@ import messages from './messages';
 const Footer = ({ classes, variant }) => (
   <Box className={classes.root} component="footer">
     <Container>
-      <Box component={Grid} container pt={5} mb={3}>
+      <Box component={Grid} container pt={5} mb={3} textAlign={{ xs: 'center', md: 'left' }}>
         <Grid item xs={12} md={3}>
-          <FooterLogo variant={variant} />
+          <Box component={FooterLogo} variant={variant} mb={3} />
           <Hidden smDown>
-            <Box ml={-1} mt={3}>
+            <Box ml={-1}>
               <SocialIcons />
             </Box>
           </Hidden>
