@@ -26,7 +26,7 @@ const LastProjects = () => {
         <Carousel
           centered
           infinite
-          arrows
+          responsive
           slidesPerPage={4}
         >
           {
